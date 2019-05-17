@@ -3,10 +3,11 @@ A simple distributed application running across multiple Docker containers using
 
 Run the app in Kubernetes
 -------------------------
-
-The folder k8s-specifications contains the yaml specifications of the Voting App's services.
-
-First create the vote namespace
+cd into K8S-VoteApp directory:
+```
+$ cd K8S-VoteApp/
+```
+Create the vote namespace
 
 ```
 $ kubectl create namespace vote
@@ -14,7 +15,7 @@ $ kubectl create namespace vote
 
 Run the following command to create the deployments and services objects:
 ```
-$ kubectl create -f k8s-specifications/
+$ kubectl create -f ./
 deployment "db" created
 service "db" created
 deployment "redis" created

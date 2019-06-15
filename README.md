@@ -1,9 +1,8 @@
 # K8S-VoteApp
 A simple distributed application running across multiple Docker containers using K8S.
 
-Start cluster using the Admission controller the app in Kubernetes
 -------------------------
-cd into K8S-VoteApp directory:
+Start cluster using the Admission controller the app in Kubernetes:
 ```
 $ minikube start --extra-config=apiserver.enable-admission-plugins="NamespaceLifecycle"
 ```
